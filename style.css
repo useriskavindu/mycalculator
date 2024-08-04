@@ -1,0 +1,145 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#main {
+    background-color: #000000b5;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border: 2px solid #00000064;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* box-sizing: border-box; */
+}
+
+#input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#input input {
+    width: 100%;
+    height: 80px;
+    border: 2px solid #000000b5;
+    box-sizing: border-box;
+    /*Special*/
+}
+
+#keys {
+    height: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border: 2px solid #000000b5;
+}
+
+#row1,
+#row2,
+#row3,
+#row4,
+#row5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* #keys #row1 button, #keys #row2 button, #keys #row3 button, #keys #row4 button, #keys #row5 button {
+ 
+} */
+
+button {
+    font-family: "Cabin", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: #000000b5;
+    border: 2px solid #0000006b;
+    border-radius: 40%;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #fbff005b;
+    color: #6d6d6d;
+}
+
+button:active {
+    background-color: #fbff00;
+    border-color: #fbff04;
+}
+
+/*-----------------------Responsiveness-------------------------*/
+
+@media (min-width : 2560px) {
+
+    #input,
+    #input input {
+        height: 150px;
+    }
+
+    button {
+        height: 120px;
+        width: 120px;
+        font-size: 50px;
+    }
+}
+
+/* ------------------------------------------------ */
+
+@media (max-width : 770px) {
+
+
+    button {
+        height: 40px;
+        width: 40px;
+        font-size: 15px;
+    }
+}
+
+/* ------------------------------------------------ */
+
+@media (max-width : 450px) {
+
+    #main {
+        width: 70%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    button {
+        height: 45px;
+        width: 45px;
+        font-size: 15px;
+    }
+}
+
+/* ------------------------------------------------ */
+
+@media (max-width : 322px) {
+
+
+    button {
+        height: 35px;
+        width: 35px;
+        font-size: 12px;
+        margin: 6px;
+    }
+}

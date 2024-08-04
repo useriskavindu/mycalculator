@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+
 </head>
+
 <body>
-    
+
+    <div id="main">
+        <!-- --------------------------------------------------------------->
+        <div id="input">
+            <input type="text" readonly>
+        </div>
+        <!-- --------------------------------------------------------------->
+        <div id="keys">
+
+            <div id="row1">
+                <button id="AC">AC</button>
+                <button id="DEL">DEL</button>
+                <button id="%">%</button>
+                <button id="/">/</button>
+            </div>
+            <!-- --------------------------------------------------------------->
+
+            <div id="row2">
+                <button id="7">7</button>
+                <button id="8">8</button>
+                <button id="9">9</button>
+                <button id="*">✕</button>
+            </div>
+            <!-- --------------------------------------------------------------->
+
+            <div id="row3">
+                <button id="4">4</button>
+                <button id="5">5</button>
+                <button id="6">6</button>
+                <button id="-">-</button>
+            </div>
+            <!-- --------------------------------------------------------------->
+
+            <div id="row4">
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+                <button id="+">+</button>
+            </div>
+            <!-- --------------------------------------------------------------->
+
+            <div id="row5">
+                <button id="00">00</button>
+                <button id="0">0</button>
+                <button id=".">.</button>
+                <button id="=">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
+
 </html>
