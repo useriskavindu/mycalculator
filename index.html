@@ -12,6 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="script.js"></script>
 
 
@@ -22,48 +27,48 @@
     <div id="main">
         <!-- --------------------------------------------------------------->
         <div id="input">
-            <input type="text" readonly>
+            <input type="text" id="display" value="" readonly>
         </div>
         <!-- --------------------------------------------------------------->
         <div id="keys">
 
             <div id="row1">
-                <button id="AC">AC</button>
+                <button id="AC" onclick="clearDisplay()">AC</button>
                 <button id="DEL">DEL</button>
-                <button id="%">%</button>
-                <button id="/">/</button>
+                <button id="percentage">%</button>
+                <button id="division" onclick="appendToDisplay('/')">/</button>
             </div>
             <!-- --------------------------------------------------------------->
 
             <div id="row2">
-                <button id="7">7</button>
-                <button id="8">8</button>
-                <button id="9">9</button>
-                <button id="*">✕</button>
+                <button id="7" onclick="appendToDisplay('7')">7</button>
+                <button id="8" onclick="appendToDisplay('8')">8</button>
+                <button id="9" onclick="appendToDisplay('9')">9</button>
+                <button id="multiplication" onclick="appendToDisplay('*')">✕</button>
             </div>
             <!-- --------------------------------------------------------------->
 
             <div id="row3">
-                <button id="4">4</button>
-                <button id="5">5</button>
-                <button id="6">6</button>
-                <button id="-">-</button>
+                <button id="4" onclick="appendToDisplay('4')">4</button>
+                <button id="5" onclick="appendToDisplay('5')">5</button>
+                <button id="6" onclick="appendToDisplay('6')">6</button>
+                <button id="minus" onclick="appendToDisplay('-')">-</button>
             </div>
             <!-- --------------------------------------------------------------->
 
             <div id="row4">
-                <button id="1">1</button>
-                <button id="2">2</button>
-                <button id="3">3</button>
-                <button id="+">+</button>
+                <button id="1" onclick="appendToDisplay('1')">1</button>
+                <button id="2" onclick="appendToDisplay('2')">2</button>
+                <button id="3" onclick="appendToDisplay('3')">3</button>
+                <button id="plus" onclick="appendToDisplay('+')">+</button>
             </div>
             <!-- --------------------------------------------------------------->
 
             <div id="row5">
-                <button id="00">00</button>
-                <button id="0">0</button>
-                <button id=".">.</button>
-                <button id="=">=</button>
+                <button id="00" onclick="appendToDisplay('00')">00</button>
+                <button id="0" onclick="appendToDisplay('0')">0</button>
+                <button id="decimal" onclick="appendToDisplay('.')">.</button>
+                <button id="answer" onclick="calculate()">=</button>
             </div>
 
         </div>
